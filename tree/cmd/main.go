@@ -69,6 +69,7 @@ func main() {
 	fmt.Printf("finded node: %#v\n", node)
 
 	fmt.Printf("remove key: %v\n", key)
+
 	fmt.Println("Before:")
 	printTree(t.Root, 0, "ROOT")
 
@@ -76,9 +77,9 @@ func main() {
 		fmt.Printf("err: %v\n", err)
 		return
 	}
+
 	fmt.Println("After: ")
 	printTree(t.Root, 0, "ROOT")
-
 }
 
 func printTree(n *model.Node, ns int, ch string) {
